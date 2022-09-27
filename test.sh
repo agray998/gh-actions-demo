@@ -1,6 +1,9 @@
 result=$(./calc.sh -f < test-cases)
 
-if [ "${result}" != $'7\n-1\n80\n2' ]; then
+echo $'expected: -1\n7\n80\n2\n' > batch_results
+echo "got: ${result}" >> batch_results
+
+if [ "${result}" != $'-1\n7\n80\n2' ]; then
   echo "failed batch test"
   exit 1
 else

@@ -15,7 +15,7 @@ div() {
   echo $(($1 / $2))
 }
 
-from_file=false
+from_file=true
 
 while getopts "f" opt; do
   case $opt in

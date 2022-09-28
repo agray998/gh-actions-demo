@@ -1,5 +1,6 @@
 #!/bin/bash
 # a calculator script which supports single-shot or batch calculations
+# testing 123
 add() {
   echo $(($1 + $2))
 }
